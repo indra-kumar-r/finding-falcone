@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: manrope, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: #13243a;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+
+    img {
+        height: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .destination-vehicle-container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .destination-vehicle-section {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        box-shadow: 0 0 0.5rem #00d2af;
+        padding: 2rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #00d2af;
+
+        label {
+            font-size: 1.35rem;
+            font-weight: bold;
+        }
+
+        select {
+            outline: none;
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+    }
+
+    button {
+        color: white;
+        padding: 1rem;
+        background-color: #007c68;
+        border: none;
+        outline: none;
+        font-size: small;
+        font-weight: bold;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        margin: 0 1rem;
+
+        &:hover {
+            background-color: #015346;
+        }
+    }
+
+    .result {
+        margin-top: 3rem;
+        font-size: small;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    color: #b2bacb;
+    height: 10%;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #b2bacb;
+        margin: 0 0.25rem;
+        color: #00d2af;
+    }
+}
